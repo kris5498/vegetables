@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vegetables
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=learning;encrypt=true;trustServerCertificate=true
+    username: krischai
+    password: 1234
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    show-sql: true
+  hikari:
+    maximum-pool-size: 10
+
